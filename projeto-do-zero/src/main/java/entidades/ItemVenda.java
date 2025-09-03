@@ -9,18 +9,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class Produto {
+public class ItemVenda {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer codigo;
-    public String nome;
-    public Double preco;
-    public LocalDate quantidade;
+    public Integer valorParcial;
+    public LocalDate quantidadeParcial;
 
     @ManyToOne
-    public Categoria categoria;
-
-    @ManyToOne
-    public Fabricante fabricante;
-    
+    public Produto produto;
 }

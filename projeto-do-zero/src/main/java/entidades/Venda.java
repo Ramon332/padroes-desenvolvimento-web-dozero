@@ -1,5 +1,6 @@
 package entidades;
 
+import java.time.LocalDateTime;
 import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
@@ -9,18 +10,18 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class Produto {
+public class Venda {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer codigo;
-    public String nome;
-    public Double preco;
-    public LocalDate quantidade;
+    public LocalDateTime horario;
+    public Integer valorTotal;
+    public LocalDate quantidadeTotal;
 
     @ManyToOne
-    public Categoria categoria;
+    public Cliente cliente;
 
     @ManyToOne
-    public Fabricante fabricante;
-    
+    public Funcionario funcionario;
+
 }
