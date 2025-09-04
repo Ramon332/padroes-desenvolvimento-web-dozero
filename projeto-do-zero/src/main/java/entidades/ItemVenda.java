@@ -14,7 +14,7 @@ public class ItemVenda {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer codigo;
     public Integer valorParcial;
-    public LocalDate quantidadeParcial;
+    public Integer quantidadeParcial;
 
     @ManyToOne
     public Produto produto;

@@ -16,7 +16,7 @@ public class Venda {
     public Integer codigo;
     public LocalDateTime horario;
     public Integer valorTotal;
-    public LocalDate quantidadeTotal;
+    public Integer quantidadeTotal;
 
     @ManyToOne
     public Cliente cliente;
