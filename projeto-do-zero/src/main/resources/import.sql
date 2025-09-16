@@ -115,3 +115,27 @@ insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) values (
 insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) values (600.00, 6, 9);
 insert into ItemVenda (valorParcial, quantidadeParcial, produto_codigo) values (120.00, 2, 10);
 
+insert into Usuario (nome, email, dataNascimento) values ("Edvan", "edvan.ppp@gmail.com", "2025-10-12");
+insert into Usuario (nome, email, dataNascimento) values ("Ana", "ana.silva@gmail.com", "1990-05-23");
+insert into Usuario (nome, email, dataNascimento) values ("Carlos", "carlos.martins@gmail.com", "1985-11-15");
+insert into Usuario (nome, email, dataNascimento) values ("Mariana", "mariana.oliveira@gmail.com", "1992-08-30");
+insert into Usuario (nome, email, dataNascimento) values ("João", "joao.pereira@gmail.com", "1988-03-10");
+
+insert into Editora (nome) values ("Editora Ana");
+insert into Editora (nome) values ("Editora Bernardo");
+insert into Editora (nome) values ("Editora Carlos");
+insert into Editora (nome) values ("Editora Deivid");
+insert into Editora (nome) values ("Editora Eliane");
+
+insert into Livro (titulo, autor, anoPublicacao, isbn, editora_codigo) values ("Java para Iniciantes", "Ana Silva", 2020, "978-3-16-148410-0", 1);
+insert into Livro (titulo, autor, anoPublicacao, isbn, editora_codigo) values ("Aprendendo Python", "Bernardo Souza", 2019, "978-1-23-456789-0", 2);
+insert into Livro (titulo, autor, anoPublicacao, isbn, editora_codigo) values ("Desenvolvimento Web com JavaScript", "Carlos Pereira", 2021, "978-0-12-345678-9", 3);
+insert into Livro (titulo, autor, anoPublicacao, isbn, editora_codigo) values ("Banco de Dados para Todos", "Deivid Martins", 2018, "978-9-87-654321-0", 4);
+insert into Livro (titulo, autor, anoPublicacao, isbn, editora_codigo) values ("Algoritmos e Estruturas de Dados", "Eliane Costa", 2022, "978-4-56-789012-3", 5);
+
+insert into Emprestimo (dataEmprestimo, dataDevolucao, livro_codigo, usuario_codigo) values ("2024-06-01", "2024-06-15", 1, 1);
+insert into Emprestimo (dataEmprestimo, dataDevolucao, livro_codigo, usuario_codigo) values ("2024-06-05", "2024-06-20", 2, 2);
+insert into Emprestimo (dataEmprestimo, dataDevolucao, livro_codigo, usuario_codigo) values ("2024-06-10", "2024-06-25", 3, 3);
+insert into Emprestimo (dataEmprestimo, dataDevolucao, livro_codigo, usuario_codigo) values ("2024-06-12", "2024-06-27", 4, 4);
+insert into Emprestimo (dataEmprestimo, dataDevolucao, livro_codigo, usuario_codigo) values ("2024-06-15", "2024-06-30", 5, 5);
+

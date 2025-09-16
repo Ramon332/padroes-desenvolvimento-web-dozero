@@ -2,7 +2,7 @@ package entidades;
 
 import java.time.LocalDate;
 
-import org.hibernate.annotations.ManyToOne;
+import jakarta.persistence.ManyToOne;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
